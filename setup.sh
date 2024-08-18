@@ -1,0 +1,2 @@
+go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+migrate -path db/migration -database "postgresql://root:secret@localhost@5432/simple_bank?sslmode=disable" -verbose up
